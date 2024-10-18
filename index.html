@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Triangle {
+            constructor(s1,s2,s3,h) 
+            {
+                this.s1 = s1
+                this.s2 = s2
+                this.s3 = s3
+                this.h = h
+            }
+            sS1() 
+            {
+                this.s1 = parseInt(prompt("Your s1: "))
+            }
+            sS2() 
+            {
+                this.s2 = parseInt(prompt("Your s2: "))
+            }
+            sS3() 
+            {
+                this.s3 = parseInt(prompt("Your s3: "))
+            }
+            sH() 
+            {
+                this.h = parseInt(prompt("Your h: "))
+            }
+            input() 
+            {
+                this.s1 = parseInt(prompt("Side 1: "))
+                this.s2 = parseInt(prompt("Side 2: "))
+                this.s3 = parseInt(prompt("Side 3: "))
+                this.h = parseInt(prompt("Height: "))
+            }
+            gV() 
+            {
+                return this.s1*this.h/2
+            }
+            gPerim() 
+            {
+                return this.s1+this.s2+this.s3
+            }
+            show() 
+            {
+                console.log("Perimetr: "+triangle1.getPerim())
+                console.log("V: "+triangle1.getV())
+            }
+        }
+
+        let triangle1 = new Triangle()
+        triangle1.input();
+        triangle1.show();
+        triangle1.setSide1();
+        triangle1.setSide2();
+        triangle1.setSide3();
+        triangle1.setHeight();
+        triangle1.show();
+
+    </script>
+</body>
+
+</html>
